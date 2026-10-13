@@ -1,0 +1,752 @@
+/* ===================================
+   CONFIGURACIÓN GENERAL
+=================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #111;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+/* ===================================
+   BARRA SUPERIOR
+=================================== */
+
+.barra-superior {
+    height: 33px;
+    background-color: #41205f;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 18%;
+    font-size: 12px;
+}
+
+.informacion {
+    display: flex;
+    gap: 38px;
+}
+
+.informacion span {
+    white-space: nowrap;
+}
+
+.informacion i {
+    margin-right: 6px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+}
+
+
+/* ===================================
+   ENCABEZADO
+=================================== */
+
+.encabezado {
+    height: 97px;
+    background-color: #68409a;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18%;
+    gap: 80px;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 130px;
+}
+
+.logo-icono {
+    color: white;
+    font-size: 50px;
+}
+
+
+/* BUSCADOR */
+
+.buscador {
+    width: 600px;
+    height: 49px;
+
+    background-color: white;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+}
+
+.buscador input {
+    border: none;
+    outline: none;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 14px;
+}
+
+.buscador i {
+    color: #697386;
+    font-size: 17px;
+}
+
+
+/* ACCIONES */
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    color: white;
+}
+
+.cuenta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.cuenta i {
+    font-size: 23px;
+}
+
+.carrito i {
+    font-size: 25px;
+}
+
+
+/* ===================================
+   MENÚ
+=================================== */
+
+.menu {
+    height: 65px;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 18%;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.links a {
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links i {
+    color: #bbb;
+    font-size: 11px;
+    margin-left: 6px;
+}
+
+
+/* CIUDAD */
+
+.ciudad {
+    background-color: #68409a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 14px 16px;
+
+    font-size: 14px;
+}
+
+.ciudad i {
+    margin: 0 5px;
+}
+
+
+/* ===================================
+   CONTENIDO
+=================================== */
+
+main {
+    width: 1115px;
+    margin: 30px auto;
+}
+
+
+/* ===================================
+   BANNER PRINCIPAL
+=================================== */
+
+.banner {
+    height: 204px;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    position: relative;
+
+    background-color: #073d73;
+}
+
+.banner-imagen {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 45%;
+    height: 100%;
+}
+
+.banner-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* TEXTO DEL BANNER */
+
+.banner-texto {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 55%;
+    height: 100%;
+
+    background-color: #063c73;
+
+    color: white;
+
+    padding: 38px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.banner-texto h1 {
+    font-size: 27px;
+    line-height: 1.05;
+}
+
+.descuentos {
+    display: flex;
+    gap: 25px;
+    font-size: 11px;
+}
+
+.descuentos span {
+    font-size: 40px;
+}
+
+.banner-texto button {
+    background-color: white;
+    color: #68409a;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 11px 18px;
+
+    font-weight: bold;
+}
+
+
+/* ===================================
+   INDICADORES
+=================================== */
+
+.indicadores {
+    text-align: center;
+    margin: 10px 0 40px;
+}
+
+.indicadores span,
+.indicadores-productos span {
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid #68409a;
+    border-radius: 50%;
+
+    margin: 0 3px;
+}
+
+.indicadores .activo,
+.indicadores-productos .activo {
+    background-color: #68409a;
+}
+
+
+/* ===================================
+   MASCOTAS
+=================================== */
+
+.mascotas {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 42px;
+}
+
+.mascota {
+    width: 50%;
+    height: 278px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.perro {
+    background-color: #fff08a;
+}
+
+.gato {
+    background-color: #9bdeef;
+}
+
+
+/* IMAGEN */
+
+.imagen-mascota {
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.imagen-mascota img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* TEXTO */
+
+.texto-mascota {
+    width: 45%;
+    padding: 20px 20px 20px 0;
+}
+
+.texto-mascota h2 {
+    font-size: 27px;
+    line-height: 1.05;
+    margin-bottom: 15px;
+}
+
+.texto-mascota p {
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.texto-mascota button {
+    background-color: #68409a;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 17px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* ===================================
+   PRODUCTOS
+=================================== */
+
+.productos h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #9da8ba;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* CONTENEDOR */
+
+.productos-contenedor {
+    display: flex;
+    gap: 16px;
+}
+
+
+/* TARJETA */
+
+.producto {
+    width: 20%;
+
+    background-color: white;
+
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* OFERTA */
+
+.oferta {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: #4da460;
+    color: white;
+
+    padding: 7px 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+/* IMAGEN PRODUCTO */
+
+.producto-imagen {
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* INFORMACIÓN */
+
+.producto-info {
+    border-top: 1px solid #e5e5e5;
+    padding: 12px 18px;
+}
+
+.marca {
+    color: #9da8ba;
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 15px;
+    font-weight: normal;
+
+    line-height: 1.35;
+
+    min-height: 50px;
+
+    margin-bottom: 18px;
+}
+
+.descuento {
+    color: #4da460;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 3px;
+}
+
+.precio {
+    font-size: 21px;
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+.precio-anterior {
+    color: #9da8ba;
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+.member {
+    color: #6c7a89;
+    font-size: 12px;
+
+    margin-bottom: 14px;
+}
+
+
+/* OPCIONES */
+
+.opciones {
+    display: flex;
+    gap: 4px;
+
+    min-height: 28px;
+
+    margin-bottom: 15px;
+
+    flex-wrap: wrap;
+}
+
+.opciones span {
+    border: 1px solid #68409a;
+    border-radius: 5px;
+
+    padding: 5px 6px;
+
+    color: #68409a;
+
+    font-size: 11px;
+}
+
+
+/* BOTÓN AGREGAR */
+
+.producto button {
+    width: 100%;
+
+    background-color: #68409a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 9px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* INDICADORES */
+
+.indicadores-productos {
+    text-align: center;
+    margin: 15px 0 45px;
+}
+
+
+/* ===================================
+   BANNER DE LA APP
+=================================== */
+
+.banner-app {
+    height: 290px;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 20% 80%, #6638a5, transparent 25%),
+        radial-gradient(circle at 80% 50%, #59208e, transparent 30%),
+        #170735;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* TEXTO */
+
+.app-texto {
+    width: 65%;
+    text-align: center;
+}
+
+.app-texto h2 {
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.app-texto h3 {
+    color: #ffd500;
+    font-size: 27px;
+
+    margin-bottom: 18px;
+}
+
+.app-texto p {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.app-texto button {
+    background-color: white;
+    color: #68409a;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 20px;
+
+    font-weight: bold;
+}
+
+
+/* DECORACIÓN */
+
+.app-decoracion {
+    width: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.app-decoracion span {
+    font-size: 65px;
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 1200px) {
+
+    .barra-superior,
+    .encabezado,
+    .menu {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    main {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .informacion {
+        display: none;
+    }
+
+    .encabezado {
+        gap: 20px;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+    .menu {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+    }
+
+    .mascotas {
+        flex-direction: column;
+    }
+
+    .mascota {
+        width: 100%;
+    }
+
+    .productos-contenedor {
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        width: 31%;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .acciones {
+        display: none;
+    }
+
+    .banner-texto {
+        width: 100%;
+        background-color: rgba(6, 60, 115, 0.9);
+    }
+
+    .banner-imagen {
+        width: 100%;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .productos-contenedor {
+        flex-direction: column;
+    }
+
+}
